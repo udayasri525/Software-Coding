@@ -36,7 +36,7 @@ public class Armstrong_number {
 	        // 1 to 1000 Armstrong numbers
 	        for (int i = 1; i <= 200; i++) {
 	            if (armstrong(i)) {
-	                System.out.println(i + " is Armstrong number");
+	                System.out.println(i);
 	            }
 	        }
 	    }
