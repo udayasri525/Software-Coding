@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1 {                       /*         simple selector */
+    color: blue;
+    background-color: aqua;
+}
+h2,p{        /*grouping selector    */
+    font-style: italic;
+    text-align: center;
+}
+*{             /* universal selector */
+    background-color:pink;
+}          
+  #no{        /*id selector */
+ color: red;
+    font-weight: bold;
+    background-color: lightgray;
+    text-align: right;
+}
+.na               /*class selector */
+{
+    color:#ea00ff;
+    background-color: aliceblue;
+}
+li:nth-child(odd) /* nth-child selector */
+{
+    color:aquamarine;
+}
+.h li:nth-child(even)
+{
+    color:red;
+}
+</style>
+</head>
+<body>
+    <h1 id="no">selectors</h1>
+    <h1>hello everyone </h1>
+    <p>good evening</p>
+    <h1>how are u</h1>
+    <h2>how is our life going </h2>
+    <pre class="na">
+        haaaa..
+                   haaaa....
+                                   haaa..
+    </pre>
+    <pre class="na">
+                        l
+                    i
+                 n
+             e      
+         
+    </pre>
+    <ol>
+        <li>revathi</li>
+           <li>udayasri</li>
+            <li>ramya</li>
+           <li>renuka</li>
+        
+    </ol>
+     <ol class="h">
+        <li>revathi</li>
+           <li>udayasri</li>
+            <li>ramya</li>
+           <li>renuka</li>
+        
+    </ol>
+</body>
+</html>
