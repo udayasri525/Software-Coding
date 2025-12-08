@@ -22,7 +22,7 @@ public boolean isgetnum(int num)
 }
 	public static void main(String[] args) {
 		 duckNumber obj=new  duckNumber();
-				 if(obj.isgetnum(023))
+				 if(obj.isgetnum(1023))
 				 {
 					 System.out.println("duck number");
 				 }
