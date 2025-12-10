@@ -17,9 +17,9 @@ public class febcheck {
 	
 	public static int feebcheck(int num)
 	{
-		for(int i=0;i*i<=num;i++)
+		for(int i=0;i*i<=num;i++) //0==0
 		{
-			if(i*i==num)
+			if(i*i==num)  //0*0==0
 				return 1;
 		}
 		return -1;
