@@ -1,0 +1,33 @@
+.container{
+    /* border: 1px solid violet; */
+   /* width: 1200px; */
+    /* height: 600px; */
+    
+}
+.m1{
+    display: inline-block;
+    /* border:1px solid yellowgreen; */
+    width: 300px;
+    /* height: 500px; */
+}
+.m2{
+    display: inline-block;
+    /* border:1px solid yellowgreen; */
+    width: 300px;
+    /* height: 500px; */
+}
+.m3{
+    display: inline-block;
+    /* border:1px solid yellowgreen; */
+    width: 300px;
+    /* height: 500px; */
+}
+.m4{
+    display: inline-block;
+    /* border:1px solid yellowgreen; */
+    width: 300px;
+    /* height: 500px; */
+}
+img{
+    width: 100%;
+}

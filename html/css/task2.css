@@ -1,0 +1,27 @@
+
+
+.main{
+    width: 100%;
+   
+
+.m1{
+    display: inline-block;
+    width: 500px;
+  padding: 50px 20px 10px 200px;
+}
+
+.m2{
+    display: inline-block;
+    width: 500px;
+  
+    
+     vertical-align: top;
+     padding-top: 50px;
+     font-size: larger;
+    
+}
+
+img{
+    width: 100%;
+    
+}
