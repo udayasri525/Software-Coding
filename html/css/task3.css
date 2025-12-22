@@ -1,21 +1,97 @@
 
 .main{
    
-    width: 1000px;
+    /* width: 1000px; */
     height: 500px;
     position:relative;
+    /* border: 2px solid; */
 }
 
-.img{
+img{
     width: 100%;
+    height: 100%;
+    
 }
 h1{
     position:absolute;
     color: white;
-    top: 75%;
-    left: 60%;
+    top: 50%;
+    left: 40%;
 }
 b{
     background-color: black;
     padding: 20px;
+}
+.container{
+    /* border: 2px solid; */
+     height: 900px;
+     /* width: 500px; */
+}
+.child-1{
+   /* border: 2px solid; */
+   height:50%;
+   /* width: 50%; */
+}
+.child-2
+{
+     /* border: 2px solid; */
+   height:50%;
+   /* width: 50%; */
+   margin-top: 20px;
+}
+.sub-child1{
+    display: inline-block;
+height: 100%;
+width: 300px;
+position: relative;
+}
+.sub-child2{
+    display: inline-block;
+height: 100%;
+width: 300px;
+position: relative;
+}
+.sub-child3{
+    display: inline-block;
+height: 100%;
+width: 310px;
+position: relative;
+}
+.sub-child4{
+    display: inline-block;
+height: 100%;
+width: 310px;
+position: relative;
+}
+h2{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top:0%;
+    left: 0%;
+    margin-top: 0%;
+}
+.subchild-1{
+    display: inline-block;
+height: 100%;
+width: 300px;
+position: relative;
+}
+.subchild-2{
+    display: inline-block;
+height: 100%;
+width: 300px;
+position: relative;
+}
+.subchild-3{
+    display: inline-block;
+height: 100%;
+width: 310px;
+position: relative;
+}
+.subchild-4{
+    display: inline-block;
+height: 100%;
+width: 310px;
+position: relative;
 }
