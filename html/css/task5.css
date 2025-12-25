@@ -1,0 +1,39 @@
+/* .container{
+    border: 2px solid;
+    width: 800px;
+    height: 800px;
+    margin-left: 200px;
+} */
+ .maincircle{
+     /* border: 2px solid; */
+    width: 300px;
+    height: 300px;
+    margin-left: 250px;
+    border-radius: 50%;
+    /* background-color: blue; */
+    position:relative;
+    top:100px;
+    /* bottom: 50px; */
+    background-color: white;
+    
+ }
+
+.rectangle{
+     border: 2px solid;
+    width: 400px;
+    height: 200px;
+    margin-left: 180px;
+    background-color: blue;
+    /* border-radius:20px ; */
+    
+}
+.circle{
+    border:2px solid;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: orange;
+}

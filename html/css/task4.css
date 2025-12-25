@@ -1,0 +1,117 @@
+body{
+    background: linear-gradient(to bottom, #00bfa5, #009688);
+}
+
+/* MOBILE FRAME */
+.container{
+    border: 5px solid;
+    width: 300px;
+    height: 500px;
+    margin: 40px auto;
+    border-radius: 50px;
+    overflow: hidden;
+    background: white;
+     position: relative;
+}
+
+/* TOP BAR */
+.child1{
+    height: 90px;
+    background: black;
+    border-radius: 45px 45px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* ICONS & PROFILE */
+.back{
+    position: absolute;
+    color: white;
+    top: 35px;
+    left: 10px;
+}
+
+.child1 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+}
+
+.child1 b{
+    color: white;
+    position: absolute;
+    top: 35px;
+    left: 120px;
+}
+
+.video-icon{
+    position: absolute;
+    color: white;
+    top: 35px;
+    right: 40px;
+}
+
+.call-icon{
+    position: absolute;
+    color: white;
+    top: 35px;
+    right: 70px;
+}
+
+.menu-icon{
+    position: absolute;
+    color: white;
+    top: 35px;
+    right: 10px;
+}
+
+/* CHAT BACKGROUND */
+.child2{
+    height: 410px;
+    background-image: url("https://wallpaperaccess.com/full/8292261.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding: 10px;
+ 
+}
+
+/* RIGHT MESSAGE */
+.right{
+    background: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px 12px 0 12px;
+    max-width: 70%;
+    float: right;
+    clear: both;
+    margin-bottom: 10px;
+    font-size: 14px;
+   
+    
+}
+
+/* LEFT MESSAGE */
+.left{
+    background: #e5e5e5;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 12px 12px 12px 0;
+    max-width: 70%;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.child3{
+    position:absolute;
+    bottom: 0%;
+}
+textarea{
+    width: 250px;
+}
