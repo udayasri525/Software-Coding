@@ -1,0 +1,58 @@
+body {
+    height: 100vh; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+  
+}
+.main {
+    width: 1000px;
+    border: 2px solid;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+}
+
+.child i {
+    font-size: xx-large;
+    display: block;
+    margin: auto;
+}
+
+.main2 {
+    width: 500px;
+    /* border: 2px solid; */
+    /* background-color: rgb(26, 132, 26); */
+    padding: 10px;
+    display: flex;
+  margin-top: 0%;
+ 
+}
+
+.child1 {
+    width: 300px;
+background-color:  rgb(26, 132, 26);
+    display: flex;           /* make flex container */
+    align-items: center;     /* vertically center all sub items */
+    justify-content: space-between; /* space between sub items */
+    gap: 10px;               /* optional, space between items */
+}
+
+.sub {
+    display: flex;
+    align-items: center;      /* vertically center content inside each sub */
+    gap: 5px;                 /* space between icon and text if any */
+}
+.child2{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    background-color: red;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
