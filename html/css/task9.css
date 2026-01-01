@@ -1,0 +1,89 @@
+body{
+  display: flex;
+  flex-direction: column;
+  padding-left: 18%;
+  background-color: rgb(0, 200, 255);
+}
+body:hover{
+    background: linear-gradient(to bottom, #ff512f, #dd2476);
+
+}
+/* ROWS */
+.main1, .main2{
+    width:840px;
+    height:300px;
+    border: 2px solid;
+    display: flex;
+    gap: 10px;
+}
+
+/* CARD BASE */
+.child, .chid{
+    width: 200px;
+    height: 300px;
+    border: 2px solid;
+    position: relative;
+    background-color: rgb(206, 125, 26);
+}
+
+img{
+    width: 200px;
+    height: 300px;
+}
+
+/* ---------- HOVER EFFECTS (UNCHANGED) ---------- */
+
+.child1 > img,
+.child2 > img,
+.child3 > img,
+.child4 > img,
+.child5 > img,
+.child6 > img,
+.child7 > img,
+.child8 > img{
+    transition: opacity 3s ease;
+}
+
+.child1:hover > img,
+.child2:hover > img,
+.child3:hover > img,
+.child4:hover > img,
+.child5:hover > img,
+.child6:hover > img,
+.child7:hover > img,
+.child8:hover > img{
+    opacity: 0;
+}
+
+.child1 > i,
+.child2 > i,
+.child3 > i,
+.child4 > i,
+.child5 > i,
+.child6 > i,
+.child7 > i,
+.child8 > i{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    opacity: 0;
+    border: 2px solid;
+    color: blue;
+    font-size:large;
+    background-color: aqua;
+    transition: opacity 3s ease;
+}
+
+.child1:hover > i,
+.child2:hover > i,
+.child3:hover > i,
+.child4:hover > i,
+.child5:hover > i,
+.child6:hover > i,
+.child7:hover > i,
+.child8:hover > i{
+    opacity: 1;
+    background: linear-gradient(to right, #da2d0b, #f09819, #cb3011);
+
+}
+

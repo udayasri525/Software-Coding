@@ -1,0 +1,27 @@
+.main{
+    width: 1250px;
+    height: 700px;
+    border: 2px solid;
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+button{
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+img{
+    width: 1250px;
+    height: 700px;
+    display: none;
+}
+.b1:hover~.img1{
+    display: block;
+}
+.b2:hover~.img2{
+    display: block;
+}
+.b3:hover~.img3{
+    display: block;
+}
+.b4:hover~.img4{
+    display: block;
+}
+
