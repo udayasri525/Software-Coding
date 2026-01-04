@@ -1,126 +1,152 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 /* NAVBAR */
 .main{
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
-
-.child{
-    color: white;
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    position:fixed;
+    width:100%;
+    top:0;
 }
 
 .child1{
-    display: flex;
-    gap: 30px;
+    display:flex;
+    gap:30px;
 }
 
 .child2 input{
-    padding: 5px;
+    padding:5px;
 }
 
-/* HERO IMAGE */
+/* HERO */
 .hero-img{
-    width: 100%;
-    height: 700px;
-    margin-top: 60px;
+    width:100%;
+    height:700px;
+    margin-top:60px;
 }
 
-/* BAND CONTENT */
+/* BAND */
 .main2{
-    width: 700px;
-    margin: 50px auto;
-    text-align: justify;
+    width:700px;
+    margin:60px auto;
+    text-align:justify;
 }
 
-/* BAND MEMBERS */
+/* MEMBERS */
 .main3{
-    width: 700px;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
+    width:700px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
 }
 
 .chil{
-    width: 200px;
-    text-align: center;
+    text-align:center;
 }
 
-.main3 .chil img{
-    width: 200px;
-    height: 200px;
+.chil img{
+    width:200px;
+    height:200px;
 }
 
-/* TOUR SECTION */
+/* TOUR */
 .main4{
-    background-color: black;
-    color: white;
-    padding: 40px 0;
-    margin-top: 50px;
+    background:black;
+    color:white;
+    padding:60px 0;
+    margin-top:60px;
 }
 
 .child6{
-    width: 1000px;
-    background-color: white;
-    color: black;
-    margin: 40px auto;
-    padding: 20px;
+    width:900px;
+    background:white;
+    color:black;
+    margin:30px auto;
+    padding:20px;
 }
 
 em{
-    background-color: red;
-    color: white;
-    padding: 3px 6px;
+    background:red;
+    color:white;
+    padding:3px 6px;
 }
 
-/* ================= TOUR CARDS ================= */
-
-/* Cards container */
 .child7{
-    width: 900px;
-    margin: 40px auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    width:900px;
+    margin:auto;
+    display:flex;
+    gap:20px;
 }
 
-/* Individual card */
-.child7 .sub{
-    background-color: white;
-    color: black;
-    width: 280px;
-    padding: 15px;
-  
+.sub{
+    background:white;
+    color:black;
+    padding:15px;
+}
+
+.sub img{
+    width:100%;
+    height:170px;
+}
+
+.sub h5{
+    background:black;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+
+/* CONTACT */
+.contact{
+    width:900px;
+    margin:60px auto;
+    display:flex;
+    gap:40px;
+}
+
+.c{
+    width:50%;
+}
+
+.c input{
+    width:100%;
+    padding:10px;
+}
+
+button{
+    background:black;
+    color:white;
+    padding:10px 20px;
+    border:none;
+}
+.main5{
+width: 100%;
+height: 300px;
+display: flex;
+background-color: white;
+color: black;
+text-align: center;
+}
+.c{
+    width: 50%;
+    height: 300px;
+}
+.c input{
+    width:200px;
+    padding:10px;
+}
+.c input.box{
+    width: 400px;
     
 }
-
-/* Card image */
-.child7 .sub img{
+.img{
     width: 100%;
-    height: 170px;
-}
-
-/* Card title */
-.child7 .sub b{
-    display: block;
-    margin-top: 10px;
-    font-size: 18px;
-}
-.child7 .sub p{
-    font-weight: lighter;
-}
-.child7 .sub h5{
-    background-color: black;
-    color: white;
 }
