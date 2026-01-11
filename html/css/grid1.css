@@ -1,0 +1,27 @@
+.main{
+    border: 2px solid;
+    /* padding-top: 2%; */
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4,2fr);
+    grid-template-rows:repeat(3,200px);
+}
+.child1,.child3,.child6{
+    background-color: green;
+}
+.child2,.child5,.child7{
+    background-color: orangered;
+}
+.child4,.child8{
+    background-color: yellow;
+}
+.child1{
+    grid-column: 2/4;
+}
+.child3{
+    grid-row: 1/4;
+}
+.child6{
+    grid-row: 2/4;
+    grid-column: 4/5;
+}

@@ -1,0 +1,53 @@
+/* Main grid container */
+.main{
+    border: 2px solid #000;
+    padding: 2%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 2fr);   /* 3 columns */
+    grid-template-rows: repeat(4, 100px);    /* 4 rows */
+    background-color: rgba(198, 231, 198, 0.6);
+}
+
+/* All child divs */
+.main > div{
+    background-color: greenyellow;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Header spans all columns */
+.header{
+    grid-column: 1 / 4;
+}
+
+/* Sidebar spans first column and rows 2–3 */
+.side{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+/* Content divs */
+.content1{
+    grid-column: 2 / 4;   /* columns 2 & 3 */
+    grid-row: 2 / 3;      /* row 2 */
+}
+
+.content2{
+    grid-column: 2 / 3;   /* column 2 */
+    grid-row: 3 / 4;      /* row 3 */
+}
+
+.content3{
+    grid-column: 3 / 4;   /* column 3 */
+    grid-row: 3 / 4;      /* row 3 */
+}
+
+/* Footer spans all columns in row 4 */
+.footer{
+    grid-column: 1 / 4;
+    grid-row: 4/4;
+}
