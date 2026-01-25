@@ -1,5 +1,9 @@
 /* Main grid container */
+body{
+    background-color: #000;
+}
 .main{
+    height: 500px;
     border: 2px solid #000;
     padding: 2%;
     display: grid;
