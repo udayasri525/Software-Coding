@@ -7,35 +7,33 @@
     <link rel="stylesheet" href="cssproject.css">
 </head>
 <body>
-    <div class="navbar">
-        <div>
-            <img src="https://jevelin.shufflehound.com/autospot/wp-content/uploads/sites/14/2017/09/auto_logo.png" alt="">
-        </div>
-        <div>
-            <h6>home</h6>
-        </div>
-        <div>
-            <h6>services</h6>
-        </div>
-        <div>
-            <h6>About us</h6>
-        </div>
-        <div>
-            <h6>Gallary</h6>
-        </div>
-        <div>
-            <h6>contacts</h6>
-        </div>
-        <div>
-             <img width="30" height="30"src="https://img.icons8.com/ios/50/twitter--v1.png" alt="twitter--v1"/>
-       
-    
-           <img width="30" height="30" src="https://img.icons8.com/ios/50/facebook-f.png" alt="facebook-f"/> 
-        
-          <img width="30" height="30" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>
-        </div>
+   <div class="navbar">
+    <div class="logo">
+        <img src="https://jevelin.shufflehound.com/autospot/wp-content/uploads/sites/14/2017/09/auto_logo.png" alt="">
     </div>
-    <div class="slider">
+
+    <!-- hamburger menu -->
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <li class="social">
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/twitter--v1.png" alt="twitter"/>
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/facebook-f.png" alt="facebook"/>
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram"/>
+        </li>
+    </ul>
+</div>
+
+   <div class="slider" id="home">
   <img src="https://img.freepik.com/premium-photo/futuristic-car-with-word-mercedes-side_875337-370.jpg" 
     alt="" class="slide">
     <div class="content">
@@ -45,7 +43,7 @@
   <!-- <img src="https://img.freepik.com/premium-photo/futuristic-car-wallpaper_839182-18460.jpg" class="slide"> -->
   
 </div>
-<div class="card">
+<div class="card" id="services">
    <div class="card1">
 <div class="child child1">
     <center>
@@ -101,7 +99,8 @@
 </center>
 </div>
    </div>
-   <div class="maincar">
+ <div class="maincar" id="about">
+
 <div class="c c1">
     <img  class="img1" src="https://jevelin.shufflehound.com/autospot/wp-content/uploads/sites/14/2016/05/auto_img_1_3.jpg" alt="">
 <img class="plus" width="25" height="25" src="https://img.icons8.com/cotton/128/plus--v3.png" alt="plus--v3"/>
@@ -143,10 +142,8 @@ Fusce augue ante, vestibulum vel est in, congue placerat lacus. Curabitur conseq
    </details>
 </div>
    </div>
- <center>
-    <p style="font-size: 3rem;">
-        Image  <strong>Gallery</strong>
-    </p>
+ <center id="gallery">
+  <p style="font-size: 3rem;">Image <strong>Gallery</strong></p>
     <p>Check out the latest Images</p>
  </center>
  <br>
@@ -232,7 +229,8 @@ Fusce augue ante, vestibulum vel est in, congue placerat lacus. Curabitur conseq
 </div>
 <br>
 <br>
-<div class="main4">
+<div class="main4" id="contact">
+
     <div class="v v1">
 <h1><strong style="color: aqua;">Our</strong> contact</h1>
 <br>
@@ -259,22 +257,19 @@ Fusce augue ante, vestibulum vel est in, congue placerat lacus. Curabitur conseq
     <div class="v v2">
 <h1><strong style="color: aqua;">Send us</strong>Message</h1>
 <br><br><br>
-<label>Name</label>
-<img width="20" height="20" src="https://img.icons8.com/color/48/checked--v4.png" alt="checked--v4"/>
-<br>
-<input tyoe="text">
-<br><br>
-<label>E-MAIL</label>
-<img width="20" height="20" src="https://img.icons8.com/color/48/checked--v4.png" alt="checked--v4"/>
-<br>
-<input tyoe="E-mail">
-<br><br>
-<label>Message here</label>
-<img width="20" height="20" src="https://img.icons8.com/color/48/checked--v4.png" alt="checked--v4"/>
-<br>
-<textarea rows="10" cols="30"></textarea>
-    </div>
-</div>
+<form action="mailto:Madduriudayasri02@gmail.com" method="post" enctype="text/plain">
+  <label>Name</label><br>
+  <input type="text" name="Name" required><br><br>
+
+  <label>E-MAIL</label><br>
+  <input type="email" name="Email" required><br><br>
+
+  <label>Message</label><br>
+  <textarea name="Message" rows="10" cols="30" required></textarea><br><br>
+
+  <button type="submit">Send Message</button>
+</form>
+
 </body>
 </html>
 </html>
