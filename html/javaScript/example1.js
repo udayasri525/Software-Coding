@@ -153,20 +153,146 @@
 
 
 
-var add=(a,b) => a+b;
- console.log(add(2,3));
+// var add=(a,b) => a+b;
+//  console.log(add(2,3));
  
 
-var greet=(greett) => greett;
- console.log(greet("hello {name}!"))
+// var greet=(greett) => greett;
+//  console.log(greet("hello {name}!"))
  
 
- var number=(num) => (num%2==0)?"true":"flase";
- console.log(number(2));
+//  var number=(num) => (num%2==0)?"true":"flase";
+//  console.log(number(2));
 
- var num=(n) => (n>10)?"true":"flase";
- console.log(num(11));
+//  var num=(n) => (n>10)?"true":"flase";
+//  console.log(num(11));
 
 
- var compare = (str1,str2) => (str1.length>str2.length)? str1 : (str1.length < str2.length)? str2 :"equal length";
- console.log(compare("hello" ,"udayasri"));
+//  var compare = (str1,str2) => (str1.length>str2.length)? str1 : (str1.length < str2.length)? str2 :"equal length";
+//  console.log(compare("hello" ,"udayasri"));
+
+// function greet(name)
+// {
+//     console.log("hello , [" +name +"]!");
+// }
+// greet("udaya");
+
+// function sum(callback)
+
+// {
+//  console.log(callback(10,20));
+// }
+// sum ((a,b)=> a+b);
+
+ 
+// function square(callback)
+// {
+//     console.log(callback(12));
+// }
+// square((a)=>a*a);
+
+// function avg(arr)
+// {
+//     var sum=0;
+//     for(var i=0;i<arr.length;i++)
+//     {
+// sum=sum+arr[i];
+//     }
+//     return sum/arr.length;
+// }
+// console.log(avg([10,20,30,40,50]));
+
+// function  define(str)
+// {
+//     var vowels="aeiouAEIOU"
+//  for(var i=0;i<str.length;i++)
+//  {
+//     for(var j=0;j<vowels.length;j++)
+//     {
+// if(str[i]===vowels[j])
+// {
+//     return true
+// }
+//     }
+//  }
+// }
+
+// console.log(define("udayasri")==true?"hello":"hii");
+
+// function temp(tempp)
+// {
+//     console.log("celscious"+((tempp-32)*(5/9)));
+//     console.log("fahrehnheit"+((temp*9/5)+32));
+// }
+// temp(100);
+
+
+// function sum(val,callback)
+// {
+//     callback(val+10);
+//     sub(20,a=>console.log(a));
+
+// }
+
+
+// function sub(val,callback)
+// {
+//     callback(val-5);
+//     mul(15,a=>console.log(a));
+// }
+
+// function mul(val,callback)
+// {
+//     callback(val*2);
+//      div(30,a=>console.log(a));
+// }
+
+// function div(val,callback)
+// {
+//     callback(val/2);
+   
+// }
+
+// sum(10,a=> console.log(a));
+
+
+// console.log("start");
+// setTimeout(() => {
+    
+//     console.log("first call");
+//     }
+// , 5000);
+// for(i=0;i<=5000;i++)
+// {
+//     console.log("i");
+// }
+// setTimeout(() => {
+//      console.log("second call");
+// }, 3000);
+
+// const URL="https://dummyjson.com/todos";
+// fetch(URL).then(res=>res.json()).then(data=>
+// {
+// var count=0;
+// for(let i=0;i<data.todos.length;i++)
+// {
+    
+//     console.log(data.todos[i].userId);
+//        console.log(data.todos[i].todo);
+
+   
+// }
+// })
+
+const URL="https://pokeapi.co/api/v2/pokemon/ditto";
+fetch(URL).then(res=>res.json()).then(data=>
+{
+for(let i=0;i<data.abilities.length;i++)
+{
+    console.log(data.abilities[i]);
+}
+for(let i=0;i<data.forms.length;i++)
+{
+    console.log(data.forms[i]);
+}
+})
