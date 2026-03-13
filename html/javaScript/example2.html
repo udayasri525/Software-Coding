@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ul=document.createElement("ul")
+        for(let i=0;i<=3;i++)
+    {
+        let li=document.createElement("li")
+        li.innerText=i;
+        ul.appendChild(li)
+    }
+    document.body.appendChild(ul)
+    console.log(ul)
+
+    let div=document.createElement("div")
+    let p=document.createElement("p")
+    p.innerText="hello udaya";
+    div.appendChild(p)
+    document.body.appendChild(div)
+    console.log(div)
+
+    let div1=document.createElement("div")
+    let h1=document.createElement("h1")
+    let p1=document.createElement("p")
+    h1.innerText="hi good to see u";
+    p1.innerText="madduri";
+    div1.appendChild(h1);
+    div1.appendChild(p1);
+    document.body.appendChild(div1);
+    console.log(div1);
+    let table=document.createElement("table")
+    let tr=document.createElement("tr")
+    for(let j=1;j<=3;j++)
+    {
+   let td=document.createElement("td")
+   td.innerText=j;
+   tr.appendChild(td)
+    }
+    table.appendChild(tr);
+    document.body.appendChild(table)
+    console.log(table)
+let div2 = document.createElement("div");
+
+for (let i = 1; i <= 3; i++) {
+    let button = document.createElement("button");
+    button.innerText = i;
+    div2.appendChild(button);
+}
+
+document.body.appendChild(div2);
+    </script>
+</body>
+</html>
