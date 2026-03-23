@@ -284,15 +284,131 @@
 // }
 // })
 
-const URL="https://pokeapi.co/api/v2/pokemon/ditto";
-fetch(URL).then(res=>res.json()).then(data=>
+// const URL="https://pokeapi.co/api/v2/pokemon/ditto";
+// fetch(URL).then(res=>res.json()).then(data=>
+// {
+// for(let i=0;i<data.abilities.length;i++)
+// {
+//     console.log(data.abilities[i]);
+// }
+// for(let i=0;i<data.forms.length;i++)
+// {
+//     console.log(data.forms[i]);
+// }
+// })
+
+// async function fetchdata()
+// {
+//  let res=await fetch("https://fakestoreapi.com/products")
+//  let data=await res.json();
+//  let container=document.getElementsByClassName("container")[0];
+//  data.forEach(obj => {
+//     let p=document.createElement("p")
+//     p.innerHTML=`
+//     <h3>Id: ${obj.id}</h3>
+//     <p>price: ${obj.price}</p>
+//     <p>Description : ${obj.description}</p>
+//     <img src= '${obj.image}'>
+//     `
+//     container.append(p)
+//  });
+// }
+// fetchdata();
+
+// async function fetdata()
+// {
+//    let res=await fetch("https://dummyjson.com/todos")
+//    let data=await res.json();
+//     getdata(data.todos);
+// }
+// function getdata(todo)
+// {
+//   let container=document.getElementsByClassName("container")[0]
+//   todo.forEach(obj => {
+//    let p=document.createElement("p")
+//    p.innerHTML=`
+//    <h3>Id: ${obj.id}</h3>
+//    <p> todo:${obj.todo}</p>
+//    <p> completed:${obj.completed}</p>
+//    `
+//     container.append(p)
+//   });
+ 
+// }
+// fetdata();
+
+
+// async function fetchdata()
+// {
+//    let res=await fetch("https://dummyjson.com/quotes")
+//    let data= await res.json()
+//  getdata(data.quotes,data)
+// }
+// function getdata(quote,data)
+// {
+//  let container=document.getElementsByClassName("container")[0]
+//       container.innerHTML = `
+//         <h2>Total: ${data.total}</h2>
+//         <h3>Skip: ${data.skip}</h3>
+//         <hr>
+//     `;
+//     container.innerHTML=`
+//        <h3>Limit: ${data.limit}</h3>
+//     `;
+//  quote.forEach(obj => {
+//    let p=document.createElement("p")
+//    p.innerHTML=`
+//    <h1 style="color:red">id:${obj.id}</h1>
+//     <i> <u>quote:${obj.quote}</u></i>
+//    `
+//    container.append(p)
+//  });
+// }
+// fetchdata();
+
+// async function fetchdata()
+// {
+//    let res=await fetch("https://jsonplaceholder.typicode.com/photos")
+//    let data=await res.json()
+//    getdata(data)
+// }
+// function getdata(data)
+// {
+//    let div=document.getElementsByClassName("container")[0]
+//    data.forEach(obj => {
+//      let p=document.createElement("p")
+//      p.innerHTML=
+//      `
+// <h1>albumId:${obj.albumId}</h1>
+// <h2>id:${obj.id}</h2>
+
+//      `
+//        div.append(p)
+//    });
+ 
+// }
+// fetchdata()
+
+ async function fetchdata()
 {
-for(let i=0;i<data.abilities.length;i++)
-{
-    console.log(data.abilities[i]);
+   let res=await fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+   let data=await res.json()
+   console.log(data)
+   getdata(data.abilities)
 }
-for(let i=0;i<data.forms.length;i++)
+function getdata(data)
 {
-    console.log(data.forms[i]);
+   let div=document.getElementsByClassName("container")[0]
+   data.forEach(obj => {
+     let p=document.createElement("p")
+     p.innerHTML=
+     `
+<h1>name:${obj.ability.name}</h1> 
+<p>url:${obj.ability.url}</p>
+
+  `
+       div.append(p)
+   });
+ 
 }
-})
+fetchdata()
