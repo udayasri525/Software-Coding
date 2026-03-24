@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    <input type="number" id="amount" placeholder="enter amount here"><br><br>
+    <select  id="from">
+   <option  selected>select</option>
+   <option value="INR">INR</option>
+    <option value="USD">USD</option>
+     <option value="EUR">EUR</option>
+    </select><br>
+     <select  id="to">
+         <option  selected>select</option>
+   <option value="INR">INR</option>
+    <option value="USD">USD</option>
+     <option value="EUR">EUR</option>
+    </select><br>
+  <button onclick="showcurrency()">Convert</button>
+
+<h2 id="result"></h2>
+    <script src="currency.js"></script>
+</body>
+</html>

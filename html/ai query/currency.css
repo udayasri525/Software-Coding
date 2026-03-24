@@ -1,0 +1,134 @@
+/* Google Font (optional but nice) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #66ddea, #7f50ae, #ea8066,#ae50a9, #66eaa4); */
+    background: linear-gradient(135deg, #cf7734, #b59bcf34, #66eab7);
+}
+
+/* Wrapper Card (using body child hack) */
+body > * {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Glass Card Effect */
+/* body::before {
+    content: "";
+    position: absolute;
+    width: 360px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+} */
+
+/* Input */
+#amount {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+#amount:focus {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* Dropdowns */
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+select:hover {
+    transform: scale(1.03);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    cursor: pointer;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Result Box */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+/* Empty state */
+#result:empty {
+    background: transparent;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    body::before {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
