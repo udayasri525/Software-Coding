@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="container">
+        <form>
+            <h2 style="text-align:center; margin-bottom:20px;">Login / Register</h2>
+           <label>email:</label> 
+           <input type="text" id="email" pattern=".+@gmail\.com" required><br><br>
+           <label>password:</label> 
+           <input type="password" id="password" required minlength="6"><br><br>
+           <button id="logbtn">login</button>
+           <button id="subbtn">register</button><br>
+        </form>
+    </div>
+<script src="login.js"></script>
+</body>
+</html>
