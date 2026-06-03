@@ -1,7 +1,0 @@
-{
-  "students": [
-    { "id": 1, "name": "Ravi", "course": "HTML" },
-    { "id": 2, "name": "Teja", "course": "CSS" }
-  ]
-}
-

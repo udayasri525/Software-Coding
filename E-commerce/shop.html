@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <a href="#">
+            <img src="img/logo.avif" class="logo" alt="logo">
+        </a>
+
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- Shop Section -->
+<section class="products">
+
+    <!-- Product 1 -->
+    <div class="pro">
+        <a href="products/chair.html">
+            <img src="img/chair-cream.jpg" class="product-img" id="p1">
+            <h5>CHAIR</h5>
+            <h4>₹1,800</h4>
+        </a>
+        <div class="colors">
+            <span onclick="changeImg('p1','img/chair.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p1','img/chair-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p1','img/chair-cream.jpg')" style="background:gold;"></span>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="pro">
+        <a href="products/table.html">
+            <img src="img/table.jpg" class="product-img" id="p2">
+            <h5>TABLE</h5>
+            <h4>₹3,500</h4>
+        </a>
+        <div class="colors">
+            <span onclick="changeImg('p2','img/table.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p2','img/table-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p2','img/table-cream.jpg')" style="background:gold;"></span>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="pro">
+        <a href="products/bedroomlight.html">
+            <img src="img/bedroom-ligt.jpg" class="product-img" id="p3">
+            <h5>BEDROOM LIGHT</h5>
+            <h4>₹8,000</h4>
+        </a>
+        <div class="colors">
+            <span onclick="changeImg('p3','img/bedroom-ligt.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p3','img/bedroom-light-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p3','img/bedroom-light-cream.jpg')" style="background:gold;"></span>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="pro">
+        <a href="products/clock.html">
+            <img src="img/clock.jpg" class="product-img" id="p4">
+            <h5>Bed</h5>
+            <h4>₹12,000</h4>
+        </a>
+        <div class="colors">
+            <span onclick="changeImg('p4','img/clock.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p4','img/Clock-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p4','img/clock-cream.jpg')" style="background:gold;"></span>
+        </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="pro">
+        <a href="products/decoor.html">
+            <img src="img/decor.jpg" class="product-img" id="p5">
+            <h5>DECOR</h5>
+            <h4>₹900</h4>
+        </a>
+        <div class="colors">
+            <span onclick="changeImg('p5','img/decor.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p5','img/decor-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p5','img/decor-cream.jpg')" style="background:gold;"></span>
+        </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="pro">
+        <a href="products/dinningtable.html">
+            <img src="img/dinning-table.jpg" class="product-img" id="p6">
+            <h5>DINNING TABLE</h5>
+            <h4>₹7000</h4>
+        </a>
+        <div class="colors">
+            <span onclick="changeImg('p6','img/dinning-table.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p6','img/dinning-table-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p6','img/dinning-table-cream.jpg')" style="background:gold;"></span>
+        </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="pro">
+        <a href="products/light2.html">
+            <img src="img/light2.jpg" class="product-img" id="p7">
+            <h5>LIGHT</h5>
+            <h4>₹4,500</h4>
+        </a>
+        <div class="colors">
+            <span onclick="changeImg('p7','img/light2.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p7','img/light2-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p7','img/light2-cream.jpg')" style="background:gold;"></span>
+        </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="pro">
+        <a href="products/stool.html">
+            <img src="img/stool-1.jpg" class="product-img" id="p8">
+            <h5>STOOL</h5>
+            <h4>₹6,000</h4>
+            <div class="colors">
+            <span onclick="changeImg('p8','img/stool-1.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p8','img/stool-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p8','img/stool-cream.jpg')" style="background:gold;"></span>
+        </div>
+        </a>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="Pro">
+        <a href="products/longstool.html">
+            <img src="img/long-stool.jpg" class="product-img" id="p9">
+            <h5>LONG STOOL</h5>
+            <h4>₹5,000</h4>
+        </a>
+        <div class="colors">
+            <span onclick="changeImg('p9','img/long-stool.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p9','img/long-stool-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p9','img/long-stool-cream.jpg')" style="background:gold;"></span>
+        </div>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="pro">
+        <a href="products/stool2.html">
+            <img src="img/stool-2.jpg" class="product-img" id="p10">
+            <h5>STOOL</h5>
+            <h4>₹10,000</h4>
+        </a>
+        <div class="colors">
+            <span onclick="changeImg('p10','img/stool-2.jpg')" style="background:black;"></span>
+            <span onclick="changeImg('p10','img/stool-2-brown.jpg')" style="background:brown;"></span>
+            <span onclick="changeImg('p10','img/stool-2-cream.jpg')" style="background:gold;"></span>
+        </div>
+    </div>
+
+</section>
+<section class="testimonials">
+  <p class="tag">TESTIMONIALS</p>
+  <h1 class="heading">What Our Customers Say</h1>
+
+  <div class="cards">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Amazing quality and fast delivery. This lamp fits perfectly in my room!"
+      </p>
+      <h3>— Ramesh</h3>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Modern design and excellent brightness. Totally worth the price."
+      </p>
+      <h3>— Suresh</h3>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Very stylish and premium look. I love how it enhances my workspace."
+      </p>
+      <h3>— Priya</h3>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Links -->
+    <div class="footer-col">
+      <h3>Links</h3>
+      <ul>
+        <li>Story</li>
+        <li>Contact</li>
+        <li>Track Order</li>
+        <li>Help</li>
+      </ul>
+    </div>
+
+    <!-- Categories -->
+    <div class="footer-col">
+      <h3>Categories</h3>
+      <ul>
+        <li>Bedroom</li>
+        <li>Decor</li>
+        <li>Living Room</li>
+        <li>Office</li>
+      </ul>
+    </div>
+
+    <!-- Subscribe -->
+    <div class="footer-col">
+      <h3>Subscribe</h3>
+      <p>Get updates about our latest products</p>
+
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>Copyright © 2026 Furniture Shop</p>
+  </div>
+</footer>
+<script>
+function changeImg(id, src) {
+    document.getElementById(id).src = src;
+}
+</script>
+</body>
+</html>

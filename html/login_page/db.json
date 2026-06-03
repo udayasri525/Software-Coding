@@ -29,6 +29,11 @@
       "id": "dc8d",
       "email": "madduriudayasri02@gmail.com",
       "password": "1@sridhar"
+    },
+    {
+      "id": "7df4",
+      "email": "madduriudayasri02@gmail.com",
+      "password": "1234"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

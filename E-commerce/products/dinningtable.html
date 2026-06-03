@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+   <!-- Header -->
+    <section id="header">
+        <a href="#">
+          <img src="../img/logo.avif" class="logo" alt="logo">
+        </a>
+
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+    </section> 
+   <section class="product">
+  <div class="product-container">
+
+    <!-- LEFT SIDE -->
+    <div class="product-left">
+
+      <div class="thumbnail">
+        <img src="../img/dinning-table.jpg" onclick="changeImg(this)">
+        <img src="../img/dinning-table-brown.jpg" onclick="changeImg(this)">
+        <img src="../img/dinning-table-cream.jpg" onclick="changeImg(this)">
+      </div>
+
+      <div class="main-img">
+        <img id="mainImage" src="../img/dinning-table.jpg">
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="product-right">
+      <p class="breadcrumb">Home / Decor</p>
+
+      <h1>Dinning-table</h1>
+
+      <div class="price">₹20,000.00</div>
+
+      <p class="description">
+        A stylish dinning-table  designed for modern interiors. 
+        High-quality material with elegant finishing makes it perfect 
+        for living rooms, bedrooms, and offices.
+      </p>
+
+      <div class="cart-section">
+        <input type="number" value="1">
+        <button>Add to Cart</button>
+      </div>
+
+      <p class="category">Category: Decor</p>
+    </div>
+
+  </div>
+</section>
+<section class="features">
+    
+    <div class="feature-box">
+        <i class="fa fa-truck"></i>
+        <h3>Free Shipping</h3>
+        <p>Enjoy free shipping on all orders above ₹999</p>
+    </div>
+
+    <div class="feature-box">
+        <i class="fa fa-undo"></i>
+        <h3>Easy Returns</h3>
+        <p>7 days easy return & exchange policy</p>
+    </div>
+
+    <div class="feature-box">
+        <i class="fa fa-lock"></i>
+        <h3>Secure Payment</h3>
+        <p>100% secure payment with SSL encryption</p>
+    </div>
+
+    <div class="feature-box">
+        <i class="fa fa-headphones"></i>
+        <h3>24/7 Support</h3>
+        <p>We are here to help you anytime</p>
+    </div>
+    </section>
+<section class="description-section">
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <span class="tab active" onclick="openTab(event,'desc')">Description</span>
+        <span class="tab" onclick="openTab(event,'info')">Additional information</span>
+        <span class="tab" onclick="openTab(event,'reviews')">Reviews (3)</span>
+    </div>
+
+    <!-- Content -->
+    <div class="tab-content">
+
+        <!-- Description -->
+        <div id="desc" class="content active">
+            <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+
+        <!-- Additional Info -->
+        <div id="info" class="content">
+            <p><strong>Weight:</strong> 1.2 kg</p>
+            <p><strong>Dimensions:</strong> 30 × 30 × 5 cm</p>
+            <p><strong>Material:</strong> Wood</p>
+            <p><strong>Color:</strong> Black</p>
+        </div>
+
+        <!-- Reviews -->
+        <div id="reviews" class="content">
+            <p>⭐⭐⭐⭐☆ - Very good quality!</p>
+            <p>⭐⭐⭐⭐⭐ - Worth the price</p>
+            <p>⭐⭐⭐⭐☆ - Nice design</p>
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        
+        <div class="footer-box">
+            <img src="../img/logo.avif" class="footer-logo"/>
+            <p>
+                We provide high quality home decor products with modern design 
+                and affordable prices for your beautiful living space.
+            </p>
+        </div>
+
+        
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        
+        <div class="footer-box">
+            <h3>Customer</h3>
+            <a href="#">My Account</a>
+            <a href="#">Orders</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Returns</a>
+        </div>
+
+        
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: support@decor.com</p>
+            <p>Phone: +91 98765 43210</p>
+
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+
+    </div>
+
+    // 
+    <div class="footer-bottom">
+        <p>© 2026 Decor Store. All Rights Reserved.</p>
+    </div>
+
+</footer>
+<script>
+function openTab(event, tabId) {
+
+    // remove active from tabs
+    document.querySelectorAll(".tab").forEach(t => {
+        t.classList.remove("active");
+    });
+
+    // hide all content
+    document.querySelectorAll(".content").forEach(c => {
+        c.classList.remove("active");
+    });
+
+    // show selected content
+    document.getElementById(tabId).classList.add("active");
+
+    // active tab highlight
+    event.target.classList.add("active");
+}
+
+
+function changeImg(img){
+  document.getElementById("mainImage").src = img.src;
+}
+</script>
+</body>
+</html>

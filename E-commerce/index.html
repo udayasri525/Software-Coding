@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <a href="#">
+            <img src="img/logo.avif" class="logo" alt="logo">
+        </a>
+
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h5>Black Friday in July</h5>
+            <h1>Up to 50% Off</h1>
+            <h3>Hundreds of styles available</h3>
+            <button>Shop Now</button>
+        </div>
+    </section>
+<section id="feature" class="section-p1">
+<div class="fe-box">
+<img src="img/free-shipping.gif" alt="">
+<h6>free-shipping</h6>
+</div>
+<div class="fe-box">
+<img src="img/online order.jpg" alt="">
+<h6>online order</h6>
+</div>
+<div class="fe-box">
+<img src="img/save money.webp" alt="">
+<h6>save money</h6>
+</div>
+<div class="fe-box">
+<img src="img/promotions.avif" alt="">
+<h6>promotions</h6>
+</div>
+<div class="fe-box">
+<img src="img/happy sell.webp" alt="">
+<h6>happy sell</h6>
+</div>
+<div class="fe-box">
+<img src="img/cell phone.gif" alt="">
+<h6>F 24/7 support</h6>
+</div>
+</section>
+<section id="category">
+    <h5>Shop by Category</h5>
+    <h1>Shop by Category</h1>
+
+    <div class="cat-container">
+ <a href="bedroom.html">
+        <div class="cat-box">
+            
+   <img src="img/stool-1.jpg" alt="">
+        
+            
+            <div class="box">
+                <h3>BEDROOM</h3>
+                <h5>6 PRODUCTS</h5>
+            </div>
+        </div>
+        </a>
+<a href="decor.html">
+     <div class="cat-box">
+            <img src="img/decor.jpg" alt="">
+           <div class="box">
+            <h3>DECOR</h3>
+            <h5>9 PRODUCTs</h5>
+           </div>
+        </div>
+</a>
+       
+<a href="livingroom.html">
+        <div class="cat-box">
+            <img src="img/living room.jpg" alt="">
+            <div class="box">
+               <h3>LIVING ROOM</h3>
+               <h5>6 PRODUCTS</h5>
+            </div>
+        </div>
+        </a>
+ <a href="office.html">
+         <div class="cat-box">
+            <img src="img/clock.jpg" alt="">
+            <div class="box">
+               <h3>OFFICE</h3>
+               <h5>11 PRODUCTS</h5>
+            </div>
+        </div>
+        </a>
+
+    </div>
+</section>
+<!-- ✅ Products -->
+<section id="product1" class="section-p1">
+       <h5>Shop by Category</h5>
+    <h1>feature products</h1>
+    <div class="pro-container">
+         <a href="products/bedroomlight.html">
+        <div class="pro">
+            <img src="img/bedroom-ligt.jpg" class="product-img">
+            <h5>classic ligth</h5>
+            <h4>₹2,500</h4>
+             <div class="colors">
+        <span onclick="changeImg(this, 'img/bedroom-ligt.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/bedroom-light-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/bedroom-light-cream.jpg')" style="background:#f4b003e5;"></span>
+    </div>
+        </div>
+    </a>
+<a href="products/clock.html">
+        <div class="pro">
+            <img src="img/clock-cream.jpg" class="product-img">
+            <h5>wall clock</h5>
+            <h4>₹1,800</h4>
+             <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/clock.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/clock-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/clock-cream.jpg')" style="background:gray;"></span>
+    </div>
+        </div>
+    </a>
+<a href="products/stool.html">
+        <div class="pro">
+            <img src="img/stool-cream.jpg" class="product-img">
+            <h5>stool</h5>
+            <h4>₹900</h4>
+                   <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/stool-1.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/stool-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/stool-cream.jpg')" style="background:gray;"></span>
+    </div>
+        </div>
+        </a>
+        <a href="products/dinningtable.html">
+         <div class="pro">
+            <img src="img/dinning-table-cream.jpg" class="product-img">
+            <h5>Dinning-table</h5>
+            <h4>₹6000</h4>
+                   <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/dinning-table.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/dinning-table-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/dinning-table-cream.jpg')" style="background:gray;"></span>
+    </div>
+        </div>
+        </a>
+        <a href="products/clock.html">
+         <div class="pro">
+            <img src="img/clock-cream.jpg" class="product-img">
+            <h5>Wall Clock</h5>
+            <h4>₹1800</h4>
+                   <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/clock.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/clock-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/clock-cream.jpg')" style="background:gray;"></span>
+    </div>
+        </div>
+        </a>
+        <a href="products/light2.html">
+         <div class="pro">
+            <img src="img/light-cream.jpg" class="product-img">
+            <h5>light</h5>
+            <h4>₹5000</h4>
+                   <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/light2.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/light2-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/light-cream.jpg')" style="background:gray;"></span>
+    </div>
+        </div>
+        <a/>
+
+    </div>
+</section>
+
+<section class="new-arrivals">
+  <div class="container">
+    <p class="tag">NEW ARRIVALS</p>
+    <h1 class="title">Brand New, Modern Lamps Collection</h1>
+    <p class="desc">Ideal for offices, bedrooms and all in between.</p>
+
+    <div class="product-card">
+        <a href="products/stool.html">
+      <div class="image">
+        <img src="img/stool-cream.jpg" alt="">
+      </div>
+      </a>
+
+      <div class="content">
+        <h2>Modern Table Lamp</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="price">$85.00</span>
+        <button>SHOP NOW</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials">
+  <p class="tag">TESTIMONIALS</p>
+  <h1 class="heading">What Our Customers Say</h1>
+
+  <div class="cards">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Amazing quality and fast delivery. This lamp fits perfectly in my room!"
+      </p>
+      <h3>— Ramesh</h3>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Modern design and excellent brightness. Totally worth the price."
+      </p>
+      <h3>— Suresh</h3>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Very stylish and premium look. I love how it enhances my workspace."
+      </p>
+      <h3>— Priya</h3>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Links -->
+    <div class="footer-col">
+      <h3>Links</h3>
+      <ul>
+        <li>Story</li>
+        <li>Contact</li>
+        <li>Track Order</li>
+        <li>Help</li>
+      </ul>
+    </div>
+
+    <!-- Categories -->
+    <div class="footer-col">
+      <h3>Categories</h3>
+      <ul>
+        <li>Bedroom</li>
+        <li>Decor</li>
+        <li>Living Room</li>
+        <li>Office</li>
+      </ul>
+    </div>
+
+    <!-- Subscribe -->
+    <div class="footer-col">
+      <h3>Subscribe</h3>
+      <p>Get updates about our latest products</p>
+
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>Copyright © 2026 Furniture Shop</p>
+  </div>
+</footer>
+<script src="script.js">
+</script>
+<script>
+      function changeImg(element, image) {
+    let parent = element.closest('.pro');
+    let img = parent.querySelector('.product-img');
+
+    // image change
+    img.src = image;
+
+    // remove active from all
+    let colors = parent.querySelectorAll('.colors span');
+    colors.forEach(c => c.classList.remove('active'));
+
+    // add active to clicked one
+    element.classList.add('active');
+}
+</script>
+</body>
+</html>

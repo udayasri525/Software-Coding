@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- ✅ correct viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bedroom.css">
+
+    <!-- Font Awesome (cart icon kosam) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#">
+            <img src="img/logo.avif" class="logo" alt="logo">
+        </a>
+
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- ✅ Banner -->
+<section id="page-header">
+     <h6><a href="index.html">home</a>/living-room</h6>
+    <h2>LIVING-ROOM</h2>
+    <p>showing all 9 products</p>
+</section>
+
+<!-- ✅ Products -->
+<section id="product1" class="section-p1">
+    <div class="pro-container">
+
+        <div class="pro">
+            <a href="products/stool2.html"></a>
+            <img src="img/stool-2-cream.jpg" class="product-img">
+            <h5>stool</h5>
+            <h4>₹2400</h4>
+        </a>
+             <div class="colors">
+        <span onclick="changeImg(this, 'img/stool-2.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/stool-2-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/stool-2-cream.jpg')" style="background:#f4b003e5;"></span>
+    </div>
+        </div>
+        
+
+        <div class="pro">
+            <a href="products/chair.html">
+            <img src="img/chair-cream.jpg" class="product-img">
+            
+            <h5>chair</h5>
+            <h4>₹1,800</h4>
+            </a>
+             <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/chair.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/chair-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/chair-cream.jpg')" style="background:gray;"></span>
+             
+    </div>
+        </div>
+
+        <div class="pro">
+            <a href="products/dinningtable.html">
+            <img src="img/dinning-table-cream.jpg" class="product-img">
+            <h5>dinning-table</h5>
+            <h4>₹9000</h4>
+        </a>
+                   <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/dinning-table.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/dinning-table-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/dinning-table-cream.jpg')" style="background:gray;"></span>
+    </div>
+        </div>
+         <div class="pro">
+            <a href="products/longstool.html">
+            <img src="img/long-stool-cream.jpg" class="product-img">
+            <h5>decor-stool</h5>
+            <h4>₹3000</h4>
+         </a>
+                   <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/long-stool.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/long-stool-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/long-stool-cream.jpg')" style="background:gray;"></span>
+    </div>
+        </div>
+         <div class="pro">
+            <a href="products/table.html">
+            <img src="img/table-cream.jpg" class="product-img">
+            <h5>Wall Clock</h5>
+            <h4>₹1800</h4>
+            </a>
+                   <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/table.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/table-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/table-cream.jpg')" style="background:gray;"></span>
+    </div>
+        </div>
+         <div class="pro">
+            <a href="products/light2.html">
+            <img src="img/light-cream.jpg" class="product-img">
+            <h5>light</h5>
+            <h4>₹5000</h4>
+         </a>
+                   <div class="colors">
+        <span class="active" onclick="changeImg(this, 'img/light2.jpg')" style="background:black;"></span>
+        <span onclick="changeImg(this, 'img/light2-brown.jpg')" style="background:brown;"></span>
+        <span onclick="changeImg(this, 'img/light-cream.jpg')" style="background:gray;"></span>
+    </div>
+        </div>
+
+    </div>
+</section>
+<footer id="footer">
+
+    <div class="footer-container">
+
+        <!-- Furniture Shop -->
+        <div class="footer-col">
+            <h4>Furniture Shop</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper.</p>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="decor.html">decor</a></li>
+                <li><a href="livingroom.html">Living-room</a></li>
+                <li><a href="office.html">Office</a></li>
+            </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="footer-col">
+            <h4>Subscribe</h4>
+            <p>Get latest updates and offers.</p>
+
+            <div class="subscribe-box">
+                <input type="email" placeholder="Enter your email">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>© 2026 Furniture Store. All rights reserved.</p>
+    </div>
+
+</footer>
+<script>
+function changeImg(element, image) {
+    let parent = element.closest('.pro');
+    let img = parent.querySelector('.product-img');
+
+    // image change
+    img.src = image;
+
+    // remove active from all
+    let colors = parent.querySelectorAll('.colors span');
+    colors.forEach(c => c.classList.remove('active'));
+
+    // add active to clicked one
+    element.classList.add('active');
+}
+</script>
+</body>
+</html>
